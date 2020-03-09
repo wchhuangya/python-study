@@ -8,6 +8,9 @@ class MyList:
     def __add__(self, rhs):
         return MyList(self.data + rhs.data)
 
+    def __mul__(self, rhs):
+        return MyList(self.data * rhs)
+
     def __repr__(self):
         '''使用自定义的 __repr__ 方法，友好的显示 MyList 的值'''
         return '%r' % self.data
@@ -17,3 +20,4 @@ if __name__ == '__main__':
     l2 = MyList([7, 8, 9])
     l3 = l1 + l2
     print(l3)
+    print(l3 * 2)
