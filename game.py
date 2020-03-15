@@ -61,8 +61,7 @@ def main():
         if is_win:
             print('恭喜你，猜对了，一共猜了 %d 次' % times)
         else:
-            # print('很遗憾，你没有猜对，正确答案是：%s' % s))
-            print('很遗憾，你没有猜对，正确答案是：', s)
+            print('很遗憾，你没有猜对，正确的答案是：%s' % s)
 
 if __name__ == '__main__':
     main()
